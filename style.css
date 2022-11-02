@@ -1,0 +1,228 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  min-height: 100vh;
+  background-color: #e3e3e3;
+
+  /* font-family: "Kanit", "PT Sans", "Calibri", "sans-serif"; */
+  /* font-family: "Julius Sans One", sans-serif; */
+  /* font-family: "Noto Sans JP", sans-serif; */
+  font-family: "Josefin Sans", sans-serif;
+}
+
+img {
+  height: 150px;
+  border-radius: 200px 20px;
+}
+
+/*//////////////////////////////////////////////////////////////*/
+/* Typograhpy */
+/*//////////////////////////////////////////////////////////////*/
+
+h1 {
+  font-family: "Julius Sans One", sans-serif;
+  /* font-family: "Noto Sans JP", sans-serif; */
+  /* font-family: "Josefin Sans", sans-serif; */
+  /* font-family: "Kanit", "PT Sans", "Calibri", "sans-serif"; */
+  text-decoration-line: underline;
+}
+
+/* h2 {
+  margin-top: auto;
+  margin-bottom: auto;
+} */
+
+/* h3 {
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-inline: 50px;
+  line-height: 2;
+} */
+
+p {
+  line-height: 2;
+  min-width: 220px;
+}
+
+span {
+  font-size: 1.2em;
+  color: #828e82;
+  text-decoration: underline;
+}
+
+/*//////////////////////////////////////////////////////////////*/
+/* Navigation section */
+/*//////////////////////////////////////////////////////////////*/
+
+nav {
+  padding: 5px;
+  position: fixed;
+  list-style-type: none;
+  width: 100%;
+  z-index: 3;
+  border-bottom: 1px solid #d3d4cc;
+  background-color: #e0e0e0;
+}
+
+a {
+  float: left;
+}
+
+nav a {
+  position: relative;
+  display: block;
+  margin: 2px 0px 2px 10px;
+  color: #607b7d;
+  text-decoration: none;
+  padding: 10px 14px 20px 14px;
+  height: 20px;
+  background-color: #e0e0e0;
+  border-left: 1px solid #d3d4cc;
+  border-bottom: 1px solid #d3d4cc;
+  border-radius: 4px;
+}
+
+nav a:active {
+  transform: scale(1.05);
+  color: #3a606e;
+}
+
+nav img {
+  width: 30px;
+  height: 30px;
+  float: left;
+  border-radius: 50%;
+  margin: 3px;
+  z-index: 4;
+  border: 1px solid #d3d4cc;
+}
+
+nav img:hover {
+  position: relative;
+  transform: scale(1.1);
+  transform-origin: center;
+  border: 0.01px solid #d3d4cc;
+}
+
+/*//////////////////////////////////////////////////////////////*/
+/* Sections */
+/*//////////////////////////////////////////////////////////////*/
+
+section {
+  display: flex;
+  position: relative;
+  margin: 0 10% 20px 10%;
+}
+
+section h2 {
+  padding: 50px 0px 0px 50px;
+  text-decoration: underline;
+}
+
+section.intro {
+  background: linear-gradient(
+    to right,
+    #e3e3e3 0%,
+    #c2c2c2 50%,
+    #e3e3e3 100%
+  );
+  justify-content: center;
+  padding-block: 200px;
+  text-align: left;
+  align-items: center;
+  color: #3a606e;
+  margin-inline: 5%;
+}
+
+section.intro img {
+  height: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+section img.deco {
+  height: 100px;
+  border-radius: 0;
+  margin-inline: 5px;
+}
+
+section.intro p {
+  margin-left: 37.5px;
+}
+
+section.light {
+  justify-content: left;
+  align-items: center;
+  background-color: #e0e0e0;
+  color: #607b7d;
+  border-radius: 100px 10px 200px 10px;
+  border-left: 2px solid #d3d4cc;
+  border-right: 2px solid #d3d4cc;
+  border-bottom: 2px solid #d3d4cc;
+}
+
+section.dark {
+  background-color: #607b7d;
+  padding: 0px 50px 50px 0;
+  color: #e0e0e0;
+  border-radius: 10px 200px 10px 100px;
+  border-left: 2px solid #3a606e;
+  border-right: 2px solid #3a606e;
+  border-bottom: 2px solid #3a606e;
+}
+
+section.dark.pictures {
+  display: grid;
+  grid-template-columns: 250px 1fr 1fr 1fr;
+  grid-template-rows: 180px 180px 180px;
+  padding-bottom: 50px;
+}
+
+section.light p,
+section.dark p,
+section.dark.pictures p {
+  padding-inline: 50px;
+  padding-bottom: 50px;
+}
+
+section.light img,
+section.dark img {
+  margin: 0 50px 0 0;
+  border-radius: 50px 5px;
+  border: 2px solid #d3d4cc;
+}
+
+.projects {
+  background-color: #828e82;
+  color: #e0e0e0;
+  z-index: 1;
+  padding: 30px 70px;
+  border: 2px solid #d3d4cc;
+  border-radius: 10px 200px 10px 200px;
+}
+
+/* "Pictures" section */
+
+section.dark.pictures img {
+  height: 150px;
+  border-radius: 10%;
+  border: 3px #d3d4cc solid;
+  margin-bottom: 10px;
+}
+
+section.dark.pictures img:hover {
+  transform: rotate(10deg) scale(1.5);
+  border-color: #3a606e;
+  border-style: dashed;
+}
+
+section.dark.pictures img:active {
+  transform: rotate(20deg) scale(1.5);
+  border-color: #3a606e;
+  border-style: dashed;
+}
+
+/* Made by: JV */
